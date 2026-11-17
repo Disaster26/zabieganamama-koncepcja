@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Blog parentingowy z Wrocławia - macierzyństwo, dom, kuchnia, recenzje | Zabiegana Mama</title>
+<meta name="description" content="Zabiegana Mama, blog Elwiry Zbadyńskiej z Wrocławia: macierzyństwo z trójką dzieci, dom, kuchnia i przepisy, recenzje książek i kosmetyków, wyzwania i konkursy. Współpraca z markami: elwira@zabieganamama.com.">
+<meta name="theme-color" content="#D91C5C">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-640.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-640.webp 640w, img/hero-m-760.webp 760w" imagesizes="100vw" media="(max-width:1060px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-d-1440.webp" imagesrcset="img/hero-d-960.webp 960w, img/hero-d-1440.webp 1440w, img/hero-d-1920.webp 1920w, img/hero-d-2400.webp 2400w" imagesizes="100vw" media="(min-width:1061px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/lora-rdzen.woff2" crossorigin>
+<style>
+@font-face{font-family:Lora;font-weight:400 700;font-display:swap;src:url(fonts/lora-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:Lora;font-weight:400 700;font-display:swap;src:url(fonts/lora-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Lora fb";src:local("Georgia");size-adjust:104%;ascent-override:90%;descent-override:24%}
+@font-face{font-family:"Jost fb";src:local("Arial");size-adjust:94%;ascent-override:106%;descent-override:28%}
+/* kolory dokladnie z logo: magenta #D91C5C i grafit #231F20 */
+:root{--m:#D91C5C;--m-d:#B5124A;--bk:#231F20;--ink:#2A2627;--mut:#5E585A;--g:#F3F2F4;--line:#DEDBDD;--hh:76px;--w:min(calc(100vw - 32px),1720px);--S:Lora,"Lora fb",Georgia,serif;--F:Jost,"Jost fb",Arial,sans-serif;--k:56px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--F);font-size:clamp(17px,.22vw + 16px,20px);line-height:1.6;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:var(--S);font-weight:600;line-height:1.12;letter-spacing:-.01em;color:var(--bk)}
+p{margin:0}
+.wrap{width:var(--w);margin:0 auto}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;z-index:99;background:#fff;padding:8px 12px}
+/* motyw: rozwiany kosmyk z logo = zycie w biegu; jeden mocno zaokraglony naroznik jak luk kosmyka */
+.lok{border-radius:0 var(--k) 0 0;overflow:hidden}
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:56px;padding:0 30px;background:var(--m);color:#fff;font:600 1.08rem/1 var(--F);text-decoration:none;border:0;cursor:pointer;transition:background .2s;border-radius:0 26px 0 0}
+.btn:hover{background:var(--m-d)}
+.btn:focus-visible{outline:3px solid var(--bk);outline-offset:3px}
+.btn svg{width:22px;height:12px;flex:none}
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;background:#fff;transition:box-shadow .2s}
+.top.sc{box-shadow:0 1px 0 var(--line),0 6px 20px rgba(35,31,32,.07)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:var(--hh)}
+.logo{display:block;flex:none}
+.logo img{height:56px;width:auto}
+.menu{display:flex;align-items:center;gap:clamp(16px,1.6vw,34px);margin-left:auto;font:500 1.05rem/1 var(--F)}
+.menu a{text-decoration:none;color:var(--ink);padding:10px 0;position:relative}
+.menu a:hover,.menu a.on{color:var(--m)}
+.menu a.on::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:3px;background:var(--m)}
+.top .btn{min-height:46px;font-size:1rem;padding:0 22px}
+.burger{display:none;width:48px;height:48px;border:0;background:none;padding:12px;cursor:pointer}
+.burger span{display:block;height:2px;background:var(--bk);margin:6px 0;transition:transform .2s,opacity .2s}
+/* hero */
+.hero{position:relative;overflow:hidden;background:#3a3436;color:#fff;display:flex;flex-direction:column;min-height:calc(100svh - var(--hh))}
+.hero .ph{position:absolute;inset:0}
+.hero .ph img{width:100%;height:100%;object-fit:cover;object-position:60% 40%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(25,21,22,.8) 0%,rgba(25,21,22,.55) 30%,rgba(25,21,22,0) 46%)}
+.hero .wrap{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding:56px 0 clamp(56px,8vh,110px)}
+.hero h1{color:#fff;font-size:clamp(2.2rem,3.1vw,4.1rem);max-width:min(10em,34vw)}
+.hero .lead{margin-top:20px;max-width:min(31em,32vw);font-size:clamp(1.08rem,.5vw + .92rem,1.38rem);line-height:1.5;color:#F1EEEF}
+.hero .akc{display:flex;flex-wrap:wrap;align-items:center;gap:16px 26px;margin-top:32px}
+.hero .od{font-size:.98rem;color:#EDE9EA}
+.hero .od b{color:#fff;font-weight:600}
+/* kosmyk pod pierwszym ekranem */
+.kosmyk{display:block;width:100%;height:auto;color:var(--m)}
+/* sekcje */
+.sek{padding:clamp(64px,7vw,120px) 0}
+.sek-g{background:var(--g)}
+.glowa{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:14px 48px;margin-bottom:clamp(28px,3vw,50px)}
+.glowa h2{font-size:clamp(1.95rem,2.8vw,3.2rem);max-width:16em}
+.glowa p{max-width:38em;color:var(--mut)}
+.glowa .wiecej{font-weight:600;color:var(--m);text-decoration:none;white-space:nowrap}
+.glowa .wiecej:hover{text-decoration:underline}
+/* wpisy: pas przesuwany */
+.pas{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3 * 24px) / 4);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;cursor:grab}
+.pas.drag{cursor:grabbing;scroll-snap-type:none}
+.pas::-webkit-scrollbar{display:none}
+.pas article{scroll-snap-align:start}
+.pas a{text-decoration:none;display:block}
+.pas .f{aspect-ratio:4/3;background:#ddd}
+.pas img{width:100%;height:100%;object-fit:cover;transition:transform .5s;-webkit-user-drag:none}
+.pas a:hover img{transform:scale(1.04)}
+.pas h3{font-size:1.24rem;margin-top:16px;line-height:1.3}
+.pas a:hover h3{color:var(--m)}
+.nawi{display:flex;gap:10px}
+.nawi button{width:48px;height:48px;border:1px solid var(--bk);background:#fff;color:var(--bk);cursor:pointer;font:500 1.3rem/1 var(--F);border-radius:0 18px 0 0}
+.nawi button:hover{background:var(--bk);color:#fff}
+/* dzialy */
+.dz{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(12px,1.2vw,22px)}
+.dz a{position:relative;display:block;aspect-ratio:3/4;color:#fff;text-decoration:none;background:#444}
+.dz img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.dz a:hover img{transform:scale(1.05)}
+.dz a::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(25,21,22,.82),rgba(25,21,22,0) 58%)}
+.dz .t{position:absolute;left:20px;right:20px;bottom:18px;z-index:1}
+.dz h3{color:#fff;font-size:clamp(1.35rem,1.5vw,1.75rem)}
+.dz small{display:block;margin-top:6px;font-size:.9rem;color:#EEE9EB;line-height:1.4}
+/* o mnie */
+.ja{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(30px,5vw,96px);align-items:start}
+.ja .f img{width:100%}
+.ja h2{font-size:clamp(1.95rem,2.8vw,3.2rem)}
+.ja .wst{margin-top:18px;font-size:1.12rem;color:var(--ink);max-width:36em}
+.role{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.role li{padding:20px 0;border-top:2px solid var(--bk)}
+.role b{display:block;font-family:var(--S);font-size:1.3rem;font-weight:600;color:var(--m)}
+.role span{display:block;margin-top:6px;color:var(--mut)}
+.podpis{margin-top:24px;font-family:var(--S);font-style:italic;font-size:1.2rem}
+/* wspolpraca: ciemny grafit z logo */
+.ws{background:var(--bk);color:#E9E5E6}
+.ws h2,.ws h3{color:#fff}
+.ws .glowa p{color:#CFC9CB}
+.ws-g{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,5vw,96px)}
+.oferta{list-style:none;margin:0;padding:0;columns:2;column-gap:40px}
+.oferta li{break-inside:avoid;padding:14px 0 14px 26px;border-bottom:1px solid #3C3638;position:relative}
+.oferta li::before{content:"";position:absolute;left:0;top:23px;width:12px;height:12px;background:var(--m);border-radius:0 8px 0 0}
+.zasady{margin-top:28px;color:#CFC9CB;max-width:44em}
+.zasady p+p{margin-top:10px}
+.marki h3{font-size:1.3rem}
+.marki ul{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.marki li{border:1px solid #4A4446;padding:8px 14px;font-size:.95rem;color:#fff;border-radius:0 12px 0 0}
+.marki .btn{margin-top:32px}
+.marki .mail{display:block;margin-top:14px;color:#CFC9CB}
+.marki .mail a{color:#fff}
+/* social */
+.soc{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 40px}
+.soc h2{font-size:clamp(1.6rem,2.2vw,2.4rem)}
+.soc nav{display:flex;flex-wrap:wrap;gap:12px}
+.soc nav a{display:inline-flex;align-items:center;min-height:52px;padding:0 24px;border:2px solid var(--bk);font-weight:600;text-decoration:none;border-radius:0 22px 0 0}
+.soc nav a:hover{background:var(--bk);color:#fff}
+/* stopka */
+.stop{background:#fff;color:var(--mut);padding:clamp(44px,5vw,72px) 0 26px;font-size:.95rem;border-top:1px solid var(--line)}
+.stop .gr{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+.stop img{height:64px;width:auto}
+.stop h3{font-family:var(--F);font-weight:600;font-size:1rem;margin-bottom:10px}
+.stop a{color:var(--bk);text-decoration:none}
+.stop a:hover{color:var(--m)}
+.stop p+p{margin-top:5px}
+.dol{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 30px;margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-size:.875rem;color:var(--bk)}
+@media (max-width:1280px){
+  .top .btn{display:none}
+  .dz{grid-template-columns:repeat(3,1fr)}
+  .pas{grid-auto-columns:calc((100% - 2 * 24px) / 3)}
+}
+@media (max-width:1060px){
+  :root{--hh:66px;--k:40px}
+  .logo img{height:46px}
+  .burger{display:block;margin-left:auto}
+  .menu{display:none;position:absolute;left:0;right:0;top:var(--hh);background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:6px 16px 20px;box-shadow:0 12px 24px rgba(0,0,0,.12);font-size:1.15rem}
+  .menu a{padding:15px 0;border-bottom:1px solid var(--line)}
+  .menu a.on::after{display:none}
+  .top.open .menu{display:flex}
+  .top.open .burger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  .top.open .burger span:nth-child(2){opacity:0}
+  .top.open .burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+  .ja,.ws-g{grid-template-columns:1fr}
+  .ja .f{max-width:520px}
+  .stop .gr{grid-template-columns:1fr 1fr}
+  .stop .gr>div:first-child{grid-column:1/-1}
+}
+@media (max-width:1060px){
+  .hero::before{background:linear-gradient(180deg,rgba(25,21,22,.84) 0%,rgba(25,21,22,.6) 34%,rgba(25,21,22,0) 56%)}
+  .hero .ph img{object-position:50% 100%}
+  .hero .wrap{justify-content:flex-start;padding:30px 0 40px}
+  .hero h1,.hero .lead{max-width:16em}
+  .hero .ph img{object-position:50% 82%}
+  .hero .lead{max-width:30em}
+}
+@media (max-width:760px){
+  .hero h1{font-size:clamp(1.85rem,7.8vw,2.4rem)}
+  .hero .lead{margin-top:12px;font-size:1.02rem}
+  .hero .akc{margin-top:24px}
+  .hero .od{display:none}
+  .pas{grid-auto-columns:80%;gap:16px;margin:0 -16px;padding:0 16px 4px;scroll-padding:0 16px}
+  .nawi{display:none}
+  .dz{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:64%;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -16px;padding:0 16px;scroll-padding:0 16px;scrollbar-width:none}
+  .dz::-webkit-scrollbar{display:none}
+  .dz a{scroll-snap-align:start}
+  .role{grid-template-columns:1fr}
+  .ja .f{max-width:300px}
+  .hero .ph img{object-position:50% 100%}
+  .oferta{columns:1}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+</style>
+</head>
+<body>
+<a class="skip" href="#tresc">Przejdź do treści</a>
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#start" aria-label="Zabiegana Mama - strona główna"><img src="img/logo.svg" width="422" height="175" alt="Zabiegana Mama"></a>
+    <nav class="menu" aria-label="Menu główne">
+      <a href="#wpisy">Z bloga</a>
+      <a href="#dzialy">Działy</a>
+      <a href="#o-mnie">O mnie</a>
+      <a href="#wspolpraca">Współpraca</a>
+      <a href="#social">Obserwuj</a>
+      <a class="btn" href="#wspolpraca">Dla marek</a>
+    </nav>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-label="Otwórz menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main id="tresc">
+<section class="hero" id="start">
+  <picture class="ph">
+    <source media="(max-width:1060px)" srcset="img/hero-m-480.webp 480w, img/hero-m-640.webp 640w, img/hero-m-760.webp 760w" sizes="100vw">
+    <img src="img/hero-d-1440.webp" srcset="img/hero-d-960.webp 960w, img/hero-d-1440.webp 1440w, img/hero-d-1920.webp 1920w, img/hero-d-2400.webp 2400w" sizes="100vw" width="2400" height="1600" alt="Dwoje dzieci na zjeżdżalni na placu zabaw w lesie" fetchpriority="high">
+  </picture>
+  <div class="wrap">
+    <h1>Blog parentingowy z Wrocławia o życiu w biegu z trójką dzieci</h1>
+    <p class="lead">Piszę o macierzyństwie, domu i kuchni. Każdy produkt najpierw dokładnie testuję, dopiero potem polecam.</p>
+    <div class="akc">
+      <a class="btn" href="#wpisy">Czytaj bloga <svg viewBox="0 0 22 12" aria-hidden="true"><path d="M0 6h19M14 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+      <p class="od">Pisze <b>Elwira Zbadyńska</b>, mama trójki</p>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="wpisy">
+  <div class="wrap">
+    <div class="glowa">
+      <h2>Z bloga</h2>
+      <div class="nawi" data-nav="pas"><button type="button" data-k="-1" aria-label="Poprzednie wpisy">‹</button><button type="button" data-k="1" aria-label="Następne wpisy">›</button></div>
+    </div>
+    <div class="pas" id="pas" data-tor>
+      <article><a href="https://zabieganamama.com/urzadzamy-romantyczny-pokoj-dla-kreatywnej-dziewczynki/" rel="noopener"><div class="f lok"><img src="img/w0.webp" srcset="img/w0.webp 400w, img/w0-l.webp 600w" sizes="(max-width:760px) 80vw, (max-width:1280px) 31vw, 24vw" width="400" height="300" loading="lazy" alt=""></div><h3>Urządzamy: Romantyczny pokój dla kreatywnej dziewczynki</h3></a></article>
+      <article><a href="https://zabieganamama.com/jak-skompletowac-garderobe-kapsulowa-w-ciazy/" rel="noopener"><div class="f lok"><img src="img/w1.webp" srcset="img/w1.webp 400w, img/w1-l.webp 600w" sizes="(max-width:760px) 80vw, (max-width:1280px) 31vw, 24vw" width="400" height="300" loading="lazy" alt=""></div><h3>Jak skompletować garderobę kapsułową w ciąży?</h3></a></article>
+      <article><a href="https://zabieganamama.com/ile-wspolnego-maja-moje-dzieci-z-malymi-norwegami/" rel="noopener"><div class="f lok"><img src="img/w2.webp" srcset="img/w2.webp 400w, img/w2-l.webp 600w" sizes="(max-width:760px) 80vw, (max-width:1280px) 31vw, 24vw" width="400" height="300" loading="lazy" alt=""></div><h3>Ile wspólnego mają moje dzieci z małymi Norwegami?</h3></a></article>
+      <article><a href="https://zabieganamama.com/pierwsze-jesienne-kadry-z-nowego-tarasu/" rel="noopener"><div class="f lok"><img src="img/w3.webp" srcset="img/w3.webp 400w, img/w3-l.webp 600w" sizes="(max-width:760px) 80vw, (max-width:1280px) 31vw, 24vw" width="400" height="300" loading="lazy" alt=""></div><h3>Pierwsze, jesienne kadry z nowego tarasu</h3></a></article>
+      <article><a href="https://zabieganamama.com/czym-zajac-starsze-dziecko-w-domu/" rel="noopener"><div class="f lok"><img src="img/w4.webp" srcset="img/w4.webp 400w, img/w4-l.webp 600w" sizes="(max-width:760px) 80vw, (max-width:1280px) 31vw, 24vw" width="400" height="300" loading="lazy" alt=""></div><h3>Konkurencja dla telewizji, czyli czym w domu zająć starsze dziecko?</h3></a></article>
+      <article><a href="https://zabieganamama.com/jak-spakowac-rodzine-23-na-urlop-gdy-zabraknie-wam-miejsca-w-bagazniku/" rel="noopener"><div class="f lok"><img src="img/w5.webp" srcset="img/w5.webp 400w, img/w5-l.webp 600w" sizes="(max-width:760px) 80vw, (max-width:1280px) 31vw, 24vw" width="400" height="300" loading="lazy" alt=""></div><h3>Jak spakować rodzinę 2+3 na urlop, gdy zabraknie Wam miejsca w bagażniku?</h3></a></article>
+      <article><a href="https://zabieganamama.com/szybka-i-efektowna-metamorfoza-pokoju-siedmioletniego-chlopca/" rel="noopener"><div class="f lok"><img src="img/w6.webp" srcset="img/w6.webp 400w, img/w6-l.webp 600w" sizes="(max-width:760px) 80vw, (max-width:1280px) 31vw, 24vw" width="400" height="300" loading="lazy" alt=""></div><h3>Szybka i efektowna metamorfoza pokoju siedmioletniego chłopca</h3></a></article>
+      <article><a href="https://zabieganamama.com/strach-ktory-kazdego-dnia-towarzyszy-mojemu-macierzynstwu/" rel="noopener"><div class="f lok"><img src="img/w7.webp" srcset="img/w7.webp 400w, img/w7-l.webp 600w" sizes="(max-width:760px) 80vw, (max-width:1280px) 31vw, 24vw" width="400" height="300" loading="lazy" alt=""></div><h3>Strach, który każdego dnia towarzyszy mojemu macierzyństwu</h3></a></article>
+    </div>
+  </div>
+</section>
+
+<section class="sek sek-g" id="dzialy">
+  <div class="wrap">
+    <div class="glowa">
+      <h2>Działy bloga</h2>
+      <p>Od codzienności z dziećmi, przez kuchnię, po książki i kosmetyki, które sprawdziłam w domu.</p>
+    </div>
+    <div class="dz" data-tor>
+      <a class="lok" href="https://zabieganamama.com/category/u-nas/" rel="noopener"><img src="img/d-unas.webp" srcset="img/d-unas.webp 360w, img/d-unas-l.webp 560w" sizes="(max-width:760px) 64vw, (max-width:1280px) 31vw, 19vw" width="360" height="480" loading="lazy" alt=""><span class="t"><h3>U nas</h3><small>Mamowo, Dzieciowo, Rodzinnie, Domowo</small></span></a>
+      <a class="lok" href="https://zabieganamama.com/category/kuchnia/" rel="noopener"><img src="img/d-kuchnia.webp" srcset="img/d-kuchnia.webp 360w, img/d-kuchnia-l.webp 560w" sizes="(max-width:760px) 64vw, (max-width:1280px) 31vw, 19vw" width="360" height="480" loading="lazy" alt=""><span class="t"><h3>Kuchnia</h3><small>Przepisy, Dieta, Gadżety, Wellness</small></span></a>
+      <a class="lok" href="https://zabieganamama.com/category/recenzje/" rel="noopener"><img src="img/d-recenzje.webp" srcset="img/d-recenzje.webp 360w, img/d-recenzje-l.webp 560w" sizes="(max-width:760px) 64vw, (max-width:1280px) 31vw, 19vw" width="360" height="480" loading="lazy" alt=""><span class="t"><h3>Recenzje</h3><small>Książki, Filmy, Kosmetyki</small></span></a>
+      <a class="lok" href="https://zabieganamama.com/category/wk/" rel="noopener"><img src="img/d-wyzwania.webp" srcset="img/d-wyzwania.webp 360w, img/d-wyzwania-l.webp 560w" sizes="(max-width:760px) 64vw, (max-width:1280px) 31vw, 19vw" width="360" height="480" loading="lazy" alt=""><span class="t"><h3>Wyzwania i konkursy</h3><small>Miesięczne wyzwania i nagrody dla Czytelniczek</small></span></a>
+      <a class="lok" href="https://zabieganamama.com/category/video/" rel="noopener"><img src="img/d-video.webp" srcset="img/d-video.webp 360w, img/d-video-l.webp 560w" sizes="(max-width:760px) 64vw, (max-width:1280px) 31vw, 19vw" width="360" height="480" loading="lazy" alt=""><span class="t"><h3>Video</h3><small>Relacje i recenzje na filmach</small></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="o-mnie">
+  <div class="wrap ja">
+    <div class="f lok"><img src="img/elwira.webp" width="720" height="900" loading="lazy" alt="Elwira Zbadyńska, autorka bloga Zabiegana Mama"></div>
+    <div>
+      <h2>Mam na imię Elwira</h2>
+      <p class="wst">Jestem żoną i mamą trójki dzieci. Mieszkamy we Wrocławiu, mamy dom, mały ogród i psa. Lubimy czytać, podróżować, kreatywnie i aktywnie spędzać czas. Żyję w biegu i lubię biegać, najlepiej na świeżym powietrzu.</p>
+      <ul class="role">
+        <li><b>Jako kobieta</b><span>Kocham latte bez cukru, czerwone wytrawne wino i książki. Jestem mistrzynią w delegowaniu zadań.</span></li>
+        <li><b>Jako mama</b><span>Turlam się po dywanie, noszę, karmię i przewijam. Dużo piorę i czasem krzyczę.</span></li>
+        <li><b>Jako żona</b><span>Pakuję lunchboxy i perfekcyjnie wybieram koszule, ale potrafiłam zapomnieć o pierwszej rocznicy ślubu.</span></li>
+        <li><b>Jako blogerka</b><span>Zawsze dokładnie testuję produkty, zanim je polecę, bo wiem, ile znaczy rekomendacja.</span></li>
+      </ul>
+      <p class="podpis">Ściskam Cię mocno! Elwira</p>
+    </div>
+  </div>
+</section>
+
+<section class="sek ws" id="wspolpraca">
+  <div class="wrap">
+    <div class="glowa">
+      <h2>Współpraca z markami</h2>
+      <p>Chętnie pomogę dotrzeć do młodych i przyszłych mam. Uważnie słucham oczekiwań, pilnuję jakości tekstów i ustalonych terminów.</p>
+    </div>
+    <div class="ws-g">
+      <div>
+        <ul class="oferta">
+          <li>Merytoryczne wpisy z rekomendacją</li>
+          <li>Profesjonalne sesje produktowe</li>
+          <li>Posty na fanpage'u</li>
+          <li>Przestrzeń na Instagramie</li>
+          <li>Lokowanie produktów</li>
+          <li>Krótkie filmy video</li>
+          <li>Konkursy i rozdania</li>
+          <li>Wpisy gościnne</li>
+        </ul>
+        <div class="zasady">
+          <p>Każde zlecenie wyceniam indywidualnie. Bazuję na współpracach płatnych i wystawiam faktury VAT.</p>
+          <p>Barter tylko przy produktach, które i tak planowałam kupić, przy nagrodach dla Czytelniczek albo w akcjach charytatywnych.</p>
+        </div>
+      </div>
+      <div class="marki">
+        <h3>Zaufali mi</h3>
+        <ul>
+          <li>Lidl</li><li>Stokke</li><li>Kinderkraft</li><li>RoboJet</li><li>Cool Mama</li><li>Feedo.pl</li><li>InviMed</li><li>Tiny Star</li><li>Ceba Baby</li><li>Nanaf Organic</li><li>Denley.pl</li><li>Ekodrogeria</li><li>Książki Burda</li>
+        </ul>
+        <a class="btn" href="mailto:elwira@zabieganamama.com">Napisz w sprawie współpracy <svg viewBox="0 0 22 12" aria-hidden="true"><path d="M0 6h19M14 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+        <span class="mail">albo bezpośrednio: <a href="mailto:elwira@zabieganamama.com">elwira@zabieganamama.com</a></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sek sek-g" id="social">
+  <div class="wrap soc">
+    <h2>Zabiegana Mama także tutaj</h2>
+    <nav aria-label="Media społecznościowe">
+      <a href="https://www.instagram.com/zabieganamamacom/" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/zabieganamamacom" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/channel/UCL-kFvPGDztX9e9rQp0r73Q" rel="noopener">YouTube</a>
+    </nav>
+  </div>
+</section>
+</main>
+
+<footer class="stop">
+  <div class="wrap">
+    <div class="gr">
+      <div><img src="img/logo.svg" width="422" height="175" alt="Zabiegana Mama"><p style="margin-top:14px">Blog Elwiry Zbadyńskiej o macierzyństwie, domu i kuchni.</p></div>
+      <div><h3>Blog</h3><p><a href="#wpisy">Z bloga</a></p><p><a href="#dzialy">Działy</a></p><p><a href="#o-mnie">O mnie</a></p></div>
+      <div><h3>Kontakt</h3><p><a href="mailto:elwira@zabieganamama.com">elwira@zabieganamama.com</a></p><p><a href="#wspolpraca">Współpraca</a></p></div>
+      <div><h3>Obserwuj</h3><p><a href="https://www.instagram.com/zabieganamamacom/" rel="noopener">Instagram</a></p><p><a href="https://www.facebook.com/zabieganamamacom" rel="noopener">Facebook</a></p><p><a href="https://www.youtube.com/channel/UCL-kFvPGDztX9e9rQp0r73Q" rel="noopener">YouTube</a></p></div>
+    </div>
+    <div class="dol"><span>© 2013-<span id="rok">2026</span> zabieganamama.com</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=zabieganamama.com&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>
