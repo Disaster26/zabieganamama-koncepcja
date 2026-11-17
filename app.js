@@ -22,5 +22,9 @@
     var nav=document.querySelector('[data-nav="'+tor.id+'"]');
     if(nav)nav.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){tor.scrollBy({left:step()*(+b.dataset.k),behavior:'smooth'})})});
   });
+  /* zdjecia ponizej pierwszego ekranu dociagane dopiero przy przewijaniu */
+  var lz=[].slice.call(document.querySelectorAll('img[data-src]'));
+  function wczytaj(i){if(i.dataset.srcset)i.srcset=i.dataset.srcset;i.src=i.dataset.src;i.removeAttribute('data-src')}
+  if('IntersectionObserver' in window){var lio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){wczytaj(e.target);lio.unobserve(e.target)}})},{rootMargin:'400px 600px'});lz.forEach(function(i){lio.observe(i)})}else lz.forEach(wczytaj);
   var r=document.getElementById('rok');if(r)r.textContent=new Date().getFullYear();
 })();
